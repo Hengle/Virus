@@ -1,0 +1,10 @@
+	    print('Lua访问特性标记的对象方法')
+            local luaM2 = CS.CSModelWithAttribute
+            local luaO2 = luaM2()
+            luaM2:SayHello1()
+            luaO2:SayHello2()
+            luaO2:SayHello3('我是阿拉丁')  --读者反馈新增一个C#方法 PC不需要重新 Generate，安卓、ios需要
+
+            --测试字符串返回
+            local value = luaO2:SayHello4('你好，我是lua')
+            print(value)                       
